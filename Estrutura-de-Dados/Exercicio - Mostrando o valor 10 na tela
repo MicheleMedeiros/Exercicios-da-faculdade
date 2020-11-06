@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+	
+	int x, *p, **q;
+	
+	p = &x;
+	q = &p;
+	x = 10;
+	
+	//mostrando o valor 10 na tela
+	printf("\n%d\n", x);
+	
+	return (0);
+}

@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+//O primeiro nome digitado após copilar ele mostra a quantidade de 
+//caracteres que existe no nome e logo depois pede para digitar
+//o segundo nome que logo apos mostra a ordem alfabetica entre os dois nomes digitados.
+
+main() {
+	
+	//Declarando caracteres
+	char umNome[30], outroNome[50]; //Dois vetores do tipo string
+	int tam;
+	
+	//ler um nome
+	printf("Digite um nome:\n");
+	gets(umNome); // ele é tipo cin, pega o valor e guarda na variavel.
+	
+	//Copia-o para o outro vetor.
+	strcpy(outroNome, umNome); //ele faz a copia para as duas variaveis, ou seja, as duas contem os mesmos valores.
+	
+	//Informe o tamanho do nome digitado.
+	tam = (int)strlen(outroNome); // ele pega a quantidade de caracteres da informação armazadenada n variavel "outronome" e armazena no "tam"
+	printf("O nome digitado possui %d caracteres.\n", tam);
+	
+	//ler outro nome e adiciona ";" ao final de ambos.
+	printf("Digite outro nome:\n");
+	gets(umNome); //sobreescreve outro nome no lugar do que já estava armazenado.
+	strcat(umNome, ";");
+	strcat(outroNome, ";");
+	//concatenar = é juntar dois elementos, ou seja, pega dois elementos e tranforma em um ex: jack anderson ex concatenando = jackanderson
+	
+	//Compara os nomes e imprime em ordem alfabética.
+	printf("Em ordem alfabetica:\n");
+	if (strcmp(umNome, outroNome) < 0){ //ele faz a comparação da string umNome e outroNome com 0. 
+		printf("%s\n%s\n", umNome, outroNome);
+	}else{
+		printf("%s\n%s\n", outroNome, umNome);
+	}
+}
