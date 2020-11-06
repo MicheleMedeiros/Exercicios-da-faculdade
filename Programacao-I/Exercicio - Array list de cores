@@ -1,0 +1,24 @@
+package questoesarrays;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class questao01 {
+
+    
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        
+        /*--------- Criando um ArrayList cores ------*/
+        ArrayList<String> cores = new ArrayList();
+        
+        /*-----------Gravando ----------------*/
+        cores.add("Vermelho");
+        cores.add("Branco");
+        cores.add("Verde");
+        cores.add("Roxo");
+        
+        /*------Imprimindo cores na tela-------*/
+        System.out.print("As Cores são:"+cores);
+    }
+    
+}

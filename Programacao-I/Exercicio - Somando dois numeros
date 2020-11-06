@@ -1,0 +1,27 @@
+package exercicios.java;
+
+public class exercicio01 {
+
+    public static void main(String[] args) {
+
+    //Declarado as variaveis   
+    int soma;
+    int num1 = 0; 
+    int num2 = 0;
+    
+    //Pedindo os valores das variaveis
+
+    int num1 = Integer.parseInt(JOptionPane.showInputDialog(null,
+    "Digite o 1° número:"));
+
+    int num2 = Integer.parseInt(JOptionPane.showInputDialog(null,
+    "Digite o 2° número:"));
+
+    //Calculando a soma dos números
+    
+    soma = (num1 + num2);
+    JOptionPane.showMessageDialog(null,"A soma dos números é:" + soma);
+
+    }
+    
+}

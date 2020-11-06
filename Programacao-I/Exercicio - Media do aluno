@@ -1,0 +1,33 @@
+
+package exercicios.java;
+
+    public class exercicio02 {
+
+        public static void main(String args[]){
+
+        //Declarando variaveis
+        char nome;
+        int n1, n2, n3, media;
+        
+        //Pedindo informações das variaveis ao usuario
+        nome = JOptionPane.showInputDialog("Informe o nome do Aluno:");
+        n1 = JOptionPane.showInputDialog("Informe a 1° nota:");
+        n2 = JOptionPane.showInputDialog("Informe a 2° nota:");
+        n3 = JOptionPane.showInputDialog("Informe a 3° nota:");
+
+        //Calculando a media das notas declaradas
+        media = (n1+n2+n3)/3;
+
+        //Condicional se está aprovado ou não
+        if (media >=6){
+            resultado = "Aprovado";
+        }else{
+            resultado = "Reprovado";
+        }
+
+        //Mostrando na Tela os resultados
+        JOptionPane.showMessageDialog(null, "A 1° nota é:" + n1,"\n"
+        null, "A 2° nota é:" + n2, "\n" null " A 3° nota é:" + n3);
+        System.out.println("A média do Aluno é:" + media);
+        }
+    }

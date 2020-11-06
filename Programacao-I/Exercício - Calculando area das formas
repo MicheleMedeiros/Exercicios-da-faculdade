@@ -1,0 +1,35 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicios {
+
+
+    public static void main(String[] args) {
+        int larguraquadrado, areaquadrado,quadradomaior, arealosango, multilosango, areavermelha;
+
+       Scanner ler = new Scanner(System.in);
+        
+        /*----Inserindo informações da largura----*/
+        System.out.println("Informe a largura do quadrado:");
+        larguraquadrado = ler.nextInt();
+        
+            /*----Calculando a area do quadradado----*/
+            areaquadrado = (larguraquadrado*larguraquadrado);
+
+            /*----Divisao do quadradado maior------*/
+            quadradomaior = (larguraquadrado/2);
+
+            /*----calculando a area do losango-----*/
+            arealosango = (quadradomaior*larguraquadrado)/2;
+            multilosango = (arealosango*2);
+
+            /*----calculando a area do quadrado vermelho---*/
+            areavermelha = (areaquadrado-multilosango);
+
+        /*----Mostrando o valor da area vermelha-----*/
+        System.out.println("O valor da asrea vermelha é:"+areavermelha);
+        
+    }
+
+}
